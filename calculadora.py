@@ -1,6 +1,16 @@
 # Calculadora em Python Thyerres
 import time
 
+def soma(x,y):
+    return x + y
+def sub(x,y):
+    return x - y
+def mult(x,y):
+    return x * y
+def div(x,y):
+    return x / y
+
+
 print("CALCULADORA EM PYTHON BY THYERRES!\n"
       "Menu de opções:\n"
       "1 - Soma\n"
@@ -22,22 +32,22 @@ while 0 <= opc <= 4:
     elif opc == 1:
         num1 = int(input('Digite o primeiro número da soma: '))
         num2 = int(input('Digite o segundo número da soma: '))
-        soma = num1 + num2
+        soma = soma(num1, num2)
         print(f'{num1} + {num2} = {soma}')
     elif opc == 2:
         num1 = int(input('Digite o primeiro número da subtração: '))
         num2 = int(input('Digite o segundo número da subtração: '))
-        sub = num1 - num2
+        sub = sub(num1, num2)
         print(f'{num1} - {num2} = {sub}')
     elif opc == 3:
         num1 = int(input('Digite o primeiro número da multiplicação: '))
         num2 = int(input('Digite o segundo número da multiplicação: '))
-        mult = num1 * num2
+        mult = mult(num1, num2)
         print(f'{num1} x {num2} = {mult}')
     elif opc == 4:
         num1 = int(input('Digite o primeiro número da divisão: '))
         num2 = int(input('Digite o segundo número da divisão: '))
-        div = num1 / num2
+        div = div(num1, num2)
         print(f'{num1} / {num2} = {div:_.2f}')
 
     opc = int(input('Digite uma nova opção, ou ZERO para sair: '))
