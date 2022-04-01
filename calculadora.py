@@ -1,4 +1,4 @@
-# Calculadora em Python
+# Calculadora em Python Thyerres
 import time
 
 print("CALCULADORA EM PYTHON BY THYERRES!\n"
